@@ -58,9 +58,5 @@ public class ArcoIris {
         System.out.println("Se a lista estiver vazia retorna true:");
         System.out.println("--------------------------------------------------------");
         System.out.println(arco.isEmpty());
-
-
-
-
     }
 }

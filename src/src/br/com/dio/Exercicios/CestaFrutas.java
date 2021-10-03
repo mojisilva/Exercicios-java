@@ -6,6 +6,5 @@ public class CestaFrutas {
         for(int i=0; i<cesta.length; i++){
             System.out.println("Produto: " + cesta[i][0] + " - Quantidade: " + cesta[i][0]);
         }
-
     }
 }
