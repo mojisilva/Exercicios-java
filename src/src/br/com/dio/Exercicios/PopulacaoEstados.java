@@ -2,7 +2,7 @@ package br.com.dio.Exercicios;
 
 import java.util.*;
 
-public class PopulaçãoEstados {
+public class PopulacaoEstados {
     public static void main(String[] args) {
         Map<String, Double> estados = new HashMap<>();
         estados.put("PE", 9.616621);
