@@ -28,9 +28,6 @@ public class MediaEscolar {
             System.out.println(aluno + ", parabéns você foi aprovado");
         }else{
             System.out.println(aluno + ", infelizmente você foi reprovado");
-        }
-
-
-        ler.close();
+        }ler.close();
     }
 }
