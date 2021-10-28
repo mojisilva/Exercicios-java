@@ -1,4 +1,4 @@
-package br.com.dio.Exercicios;
+package ExerciciosBasicos;
 
 public class NumeroPrimo {
     public static void main(String[] args) {

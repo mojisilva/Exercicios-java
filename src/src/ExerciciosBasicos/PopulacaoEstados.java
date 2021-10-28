@@ -1,4 +1,4 @@
-package br.com.dio.Exercicios;
+package ExerciciosBasicos;
 
 import java.util.*;
 

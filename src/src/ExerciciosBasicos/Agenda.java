@@ -1,4 +1,4 @@
-package br.com.dio.Exercicios;
+package ExerciciosBasicos;
 
 public class Agenda {
     public static void main(String[] args) {

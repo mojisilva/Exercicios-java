@@ -1,4 +1,4 @@
-package br.com.dio.Exercicios;
+package ExerciciosBasicos;
 
 public class CestaFrutas {
     public static void main(String[] args) {
