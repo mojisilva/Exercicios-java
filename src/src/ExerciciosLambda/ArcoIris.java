@@ -34,15 +34,15 @@ public class ArcoIris {
         System.out.println("Exiba as cores com a letra v:");
         System.out.println("--------------------------------------------------------");
         arco.stream()
-                .filter(a-> a.startsWith("v"))
+                .filter(a-> a.startsWith("v") || a.startsWith("V"))
                 .collect(Collectors.toSet()).stream().sorted()
                 .forEach(System.out::println);
-        arco.removeIf(a -> !a.startsWith("v"));
+        arco.removeIf(a -> !a.startsWith("v") || !a.startsWith("V") );
         arco.forEach(System.out::println);
         arco.clear();
         System.out.println("--------------------------------------------------------");
         System.out.println("Se a lista estiver vazia retorna true:");
         System.out.println("--------------------------------------------------------");
         System.out.println(arco.isEmpty());
-    }
+        }
 }
