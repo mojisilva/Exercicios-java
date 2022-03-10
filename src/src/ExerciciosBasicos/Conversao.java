@@ -6,8 +6,8 @@ public class Conversao {
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
         String letra;
-        Double unidMedida;
-        Double quantidade;
+        double unidMedida;
+        double quantidade;
         do {
             System.out.println("Digite L caso queira converter quilos em libras ou K caso queira convertes libras em quilos:");
             letra = ler.nextLine();

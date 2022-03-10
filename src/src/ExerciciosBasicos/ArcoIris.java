@@ -47,12 +47,7 @@ public class ArcoIris {
                 System.out.println(a);
             }
         }
-        Iterator<String> it = arco.iterator();
-        while(it.hasNext()){
-            if(!it.next().startsWith("v")){
-                it.remove();
-            }
-        }
+        arco.removeIf(s -> !s.startsWith("v"));
         arco.clear();
         System.out.println("--------------------------------------------------------");
         System.out.println("Se a lista estiver vazia retorna true:");

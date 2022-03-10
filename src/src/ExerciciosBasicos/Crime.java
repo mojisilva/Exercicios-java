@@ -1,7 +1,6 @@
 package ExerciciosBasicos;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.Scanner;
 
 public class Crime {
@@ -32,27 +31,17 @@ public class Crime {
         r = r.toUpperCase();
         respostas.add(r);
         System.out.println(respostas);
-        Iterator<String> i = respostas.iterator();
-        while(i.hasNext()){
-            if(respostas.contains("S")){
+        for (String ignored : respostas) {
+            if (respostas.contains("S")) {
                 cont++;
-                i.next();
             }
         }
         System.out.println("Você respondeu a " + cont + " respostas positivas");
-        switch (cont){
-            case 2:
-                System.out.println("Você foi classificado(a) como suspeito(a)");
-            break;
-            case 3:
-            case 4:
-                System.out.println("Você foi classificado(a) como cúmplice");
-            break;
-            case 5:
-                System.out.println("Você foi classificado(a) como assassino(a)");
-            break;
-            default:
-                System.out.println("Você foi classificado(a) como inocente");
+        switch (cont) {
+            case 2 -> System.out.println("Você foi classificado(a) como suspeito(a)");
+            case 3, 4 -> System.out.println("Você foi classificado(a) como cúmplice");
+            case 5 -> System.out.println("Você foi classificado(a) como assassino(a)");
+            default -> System.out.println("Você foi classificado(a) como inocente");
         }
         ler.close();
     }
